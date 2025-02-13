@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #be0e0e;
+
+      
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width=300px
+    height=260px
+}
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #f66, #faa);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f44, rgb(252, 54, 54));
+    clip-path: polygon(0 0,100% 0,50% 100%);
+      transition: transform 0.10s
+    ease-in-out ;
+      transform-origin: top;
+}
+
+.letter {
+    width: 180px;
+    height: 150px;
+    background: rgb(224, 128, 128);
+    position:relative;
+    top: 100%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    transition: top 0.10s ease-in-out;
+    transform-origin:bottom ;
+    font-size: 15px;
+    font-color:black;
+    font-style: calc();
+    line-height: 1.5;
+}
+
+.letter p {
+    margin: 5px 0;
+}
+
+.letter.show {
+    top: 100%;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.openbtn {
+    background-color: rgb(245, 97, 97);
+    color: black;
+    border: 2px solid black;
+}
+
+.closebtn {
+    background-color: #f66;
+    color: rgb(8, 8, 8);
+    border: 2px solid black;
+
+}
+
+.closebtn:hover {
+    background-color: #d44;
+}
+.wish {
+    font-size:40px;
+    font-style:normal;
+    font-display:centre ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    -webkit-flow-into: calc();
+
+    
+
+}
